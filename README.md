@@ -1,7 +1,10 @@
 # Simple-point-counter
  A simple point counter made in python
 
-## Simple point counter
-For the moment only relased in italian langage
+## Inglese
+### Simple point counter
+ For the moment only relased in italian langage
 
-||tesst||
+## Italiano
+### Un seplice contatore di punti
+ Per il momento rilasciato solo in italiano
