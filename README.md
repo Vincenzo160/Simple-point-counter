@@ -3,4 +3,3 @@
 ## Simple point counter
 For the moment only relased in italian langage
 
-||tesst||
