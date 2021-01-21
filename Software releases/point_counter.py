@@ -1,4 +1,4 @@
-version = "1.0"
+version = "1.0.1"
 add = 1
 A_Point = '0'
 B_Point = '0'
@@ -91,5 +91,5 @@ while True:
         continue
 
     else:
-        print("Comando errato, digita help per informazioni sul utilizzo del software")
+        print("Comando errato, digita help per informazioni sul utilizzo del software o visita https://github.com/Vincenzo160/Simple-point-counter/wiki per visitare la wiki ufficiale")
 
