@@ -1,4 +1,4 @@
-version = "1.0.1"
+version = "1.0.2"
 add = 1
 A_Point = '0'
 B_Point = '0'
@@ -16,6 +16,7 @@ while True:
         print("Scegli la sezione che ti interessa")
         print("--add_point = Guida al aggiungere punti")
         print("--remove_point = Guida al rimuovere punti")
+        print("--exit Guida al uscita dal programma")
         print("")
         continue
 
@@ -38,6 +39,17 @@ while True:
         print("")
         print("ESEMPIO")
         print("b-")
+        print("")
+        continue
+
+    if input == 'help --exit':
+        print("")
+        print("Uscire")
+        print("")
+        print("Per uscire digita exit")
+        print("")
+        print("ESEMPIO")
+        print("exit")
         print("")
         continue
 
@@ -89,6 +101,13 @@ while True:
         B_Point = float(B_Point) + float(1)
         A_Point = float(A_Point) + float(1)
         continue
+
+    if input == "":
+        continue
+
+    if input == "exit":
+        print ("Uscita...")
+        exit(0)
 
     else:
         print("Comando errato, digita help per informazioni sul utilizzo del software o visita https://github.com/Vincenzo160/Simple-point-counter/wiki per visitare la wiki ufficiale")

@@ -1,4 +1,4 @@
-version = "1.0.1"
+version = "1.0.2"
 add = 1
 A_Point = '0'
 B_Point = '0'
@@ -40,6 +40,18 @@ while True:
         print("b-")
         print("")
         continue
+
+    if input == 'help --exit':
+        print("")
+        print("Exiting")
+        print("")
+        print("To exit, type exit")
+        print("")
+        print("EXAMPLE")
+        print("exit")
+        print("")
+        continue
+
 
     if input == "A":
         A_Point = float(A_Point) + float(1)
@@ -89,6 +101,13 @@ while True:
         B_Point = float(B_Point) + float(1)
         A_Point = float(A_Point) + float(1)
         continue
+
+    if input == "":
+        continue
+
+    if input == "exit":
+        print ("Exting...")
+        exit(0)
 
     else:
         print("Incorrect command, type help for information on using the software or visit https://github.com/Vincenzo160/Simple-point-counter/wiki to visit the official wiki")
