@@ -4,8 +4,8 @@
 ## language supported:
 | language | Supported | Version | Version estimated for support |
 |----------|-----------|---------|-------------------------------|
-| Italian  | ✅| 1.0     | --- |
-| English  | ✅| 1.1     | ---|
-| French | ❌|         | 2.0|
+| Italian  |:white_check_mark:| 1.0     | --- |
+| English  |:white_check_mark:| 1.1     | ---|
+| French |:x:|         | 2.0|
 
 ### [View releases](https://github.com/Vincenzo160/Simple-point-counter/releases)
