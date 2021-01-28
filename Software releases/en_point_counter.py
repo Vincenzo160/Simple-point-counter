@@ -16,6 +16,7 @@ while True:
         print("Choose the section that interests you")
         print("--add_point = Guide to adding points")
         print("--remove_point = Guide to remove points")
+        print("--exit Guide to exiting")
         print("")
         continue
 
