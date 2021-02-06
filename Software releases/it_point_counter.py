@@ -1,5 +1,5 @@
 import random
-version = "1.1.2"
+version = "1.1.2-hotfix 1"
 add = 1
 A_Point = '0'
 B_Point = '0'
@@ -18,6 +18,7 @@ while True:
         print("--add_point = Guida al aggiungere punti")
         print("--remove_point = Guida al rimuovere punti")
         print("--exit Guida al uscita dal programma")
+        print("--random Guida al rendere casuale il punteggio")
         print("")
         continue
 

@@ -1,5 +1,5 @@
 import random
-version = "1.1.2"
+version = "1.1.2-hotfix 1"
 add = 1
 A_Point = '0'
 B_Point = '0'
@@ -18,7 +18,7 @@ while True:
         print("--add_point = Guide to adding points")
         print("--remove_point = Guide to remove points")
         print("--exit Guide to exiting")
-        print("--random Guide to set random number")
+        print("--random Guide to randomize the score")
         print("")
         continue
 
