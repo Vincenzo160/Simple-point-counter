@@ -1,4 +1,5 @@
-version = "1.1.1"
+import random
+version = "1.1.2"
 add = 1
 A_Point = '0'
 B_Point = '0'
@@ -53,6 +54,17 @@ while True:
         print("")
         continue
 
+    if input == 'help --random':
+        print("")
+        print("Rendi casuale")
+        print("")
+        print("Per rendere casuale il punteggio digita random seguito dalla lettera assegnata alla squadra, o digita semplicemente random per randomizzare entrambe le squadre")
+        print("")
+        print("ESEMPIO")
+        print("random")
+        print("")
+        continue
+
     if input == "A":
         A_Point = float(A_Point) + float(1)
         continue
@@ -101,6 +113,28 @@ while True:
         B_Point = float(B_Point) + float(1)
         A_Point = float(A_Point) + float(1)
         continue
+
+    if input == "random":
+        A_Point = float(random.randint(int(1), int(100)))
+        B_Point = float(random.randint(int(1), int(10)))
+        continue
+
+    if input == "randoma":
+        A_Point = float(random.randint(int(1), int(100)))
+        continue
+
+    if input == "randomA":
+        A_Point = float(random.randint(int(1), int(100)))
+        continue
+
+    if input == "randomb":
+        B_Point = float(random.randint(int(1), int(100)))
+        continue
+
+    if input == "randomB":
+        B_Point = float(random.randint(int(1), int(100)))
+        continue
+
 
     if input == "":
         continue

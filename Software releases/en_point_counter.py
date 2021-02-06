@@ -1,4 +1,5 @@
-version = "1.1.1"
+import random
+version = "1.1.2"
 add = 1
 A_Point = '0'
 B_Point = '0'
@@ -17,6 +18,7 @@ while True:
         print("--add_point = Guide to adding points")
         print("--remove_point = Guide to remove points")
         print("--exit Guide to exiting")
+        print("--random Guide to set random number")
         print("")
         continue
 
@@ -50,6 +52,17 @@ while True:
         print("")
         print("EXAMPLE")
         print("exit")
+        print("")
+        continue
+
+    if input == 'help --random':
+        print("")
+        print("Randomize")
+        print("")
+        print("To randomize the score type random followed by the letter assigned to the team, or just type random to randomize both the team")
+        print("")
+        print("EXAMPLE")
+        print("random")
         print("")
         continue
 
@@ -101,6 +114,27 @@ while True:
     if input == "AB":
         B_Point = float(B_Point) + float(1)
         A_Point = float(A_Point) + float(1)
+        continue
+
+    if input == "random":
+        A_Point = float(random.randint(int(1), int(100)))
+        B_Point = float(random.randint(int(1), int(100)))
+        continue
+
+    if input == "randoma":
+        A_Point = float(random.randint(int(1), int(100)))
+        continue
+
+    if input == "randomA":
+        A_Point = float(random.randint(int(1), int(100)))
+        continue
+
+    if input == "randomb":
+        B_Point = float(random.randint(int(1), int(100)))
+        continue
+
+    if input == "randomB":
+        B_Point = float(random.randint(int(1), int(100)))
         continue
 
     if input == "":
