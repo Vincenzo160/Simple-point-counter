@@ -1,5 +1,5 @@
 import random
-version = "1.1.2-hotfix 1"
+version = "1.1.3"
 add = 1
 A_Point = '0'
 B_Point = '0'
@@ -66,6 +66,17 @@ while True:
         print("")
         continue
 
+    if input == 'help --reset':
+        print("")
+        print("Resetta il punteggio")
+        print("")
+        print("Per resettare il punteggio digita reset seguito dalla lettera assegnata alla squadra, o digita semplicemente reset per randomizzare resettare le squadre")
+        print("")
+        print("ESEMPIO")
+        print("resetb")
+        print("")
+        continue
+
     if input == "A":
         A_Point = float(A_Point) + float(1)
         continue
@@ -117,7 +128,7 @@ while True:
 
     if input == "random":
         A_Point = float(random.randint(int(1), int(100)))
-        B_Point = float(random.randint(int(1), int(10)))
+        B_Point = float(random.randint(int(1), int(100)))
         continue
 
     if input == "randoma":
@@ -136,6 +147,18 @@ while True:
         B_Point = float(random.randint(int(1), int(100)))
         continue
 
+    if input == "reset":
+        B_Point = float(0)
+        A_Point = float(0)
+        continue
+
+    if input == "reseta":
+        A_Point = float(0)
+        continue
+
+    if input == "resetb":
+        B_Point = float(0)
+        continue
 
     if input == "":
         continue
