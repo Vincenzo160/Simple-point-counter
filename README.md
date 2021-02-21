@@ -1,6 +1,8 @@
 # Simple-point-counter
  A simple point counter made in python
 
+[Download](https://github.com/Vincenzo160/Simple-point-counter/releases)
+
 ## language supported:
 | language | Supported | Version | Version estimated for support |
 |----------|-----------|---------|-------------------------------|
