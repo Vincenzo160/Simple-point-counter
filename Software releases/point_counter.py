@@ -1,6 +1,6 @@
 # init
 import random
-version = "1.1.3"
+version = "2.0.0"
 add = 1
 A_Point = '0'
 B_Point = '0'
