@@ -1,28 +1,27 @@
+# init
 import random
 version = "1.1.3"
 add = 1
 A_Point = '0'
 B_Point = '0'
 print("Version:", version)
-while True:
-    input = '0'
-    del(input)
-    print('A=', A_Point, 'B=', B_Point)
-    input = input('> ')
+input = ""
 
-    if input == 'help':
+# functions
+# hel = help
+# exit = exit
+def hel(input):
+    if input == "help":
         print("")
         print("Add --[argument]")
         print("")
         print("Choose the section that interests you")
         print("--add_point = Guide to adding points")
         print("--remove_point = Guide to remove points")
-        print("--exit Guide to exiting")
         print("--random Guide to randomize the score")
         print("")
-        continue
-
-    if input == 'help --add_point':
+    
+    if input == "help --add_point":
         print("")
         print("Add points")
         print("")
@@ -31,8 +30,7 @@ while True:
         print("EXAMPLE")
         print("a")
         print("")
-        continue
-
+    
     if input == 'help --remove_point':
         print("")
         print("Remove points")
@@ -42,18 +40,6 @@ while True:
         print("EXAMPLE")
         print("b-")
         print("")
-        continue
-
-    if input == 'help --exit':
-        print("")
-        print("Exiting")
-        print("")
-        print("To exit, type exit")
-        print("")
-        print("EXAMPLE")
-        print("exit")
-        print("")
-        continue
 
     if input == 'help --random':
         print("")
@@ -64,8 +50,7 @@ while True:
         print("EXAMPLE")
         print("random")
         print("")
-        continue
-
+    
     if input == 'help --reset':
         print("")
         print("Reset the score")
@@ -75,98 +60,73 @@ while True:
         print("EXAMPLE")
         print("resetb")
         print("")
-        continue
+def exi():
+        print("Exting...")
+        exit(0)
 
-    if input == "A":
+# input
+while True:
+    input = '0'
+    del(input)
+    print('A=', A_Point, 'B=', B_Point)
+    input = input('> ')
+    # input check
+    # help
+    if input == "help" or input == "help --add_point" or input == "help --remove_point" or input == "help --exit" or input == "help --random" or input == "help --reset":
+        hel(input)
+        continue
+    # adding
+    if input == "a" or input == "A":
         A_Point = float(A_Point) + float(1)
         continue
-
-    if input == "B":
+    if input == "b" or input == "B":
         B_Point = float(B_Point) + float(1)
         continue
-
-    if input == "a":
+    if input == "ab" or input == "AB":
         A_Point = float(A_Point) + float(1)
-        continue
-
-    if input == "b":
         B_Point = float(B_Point) + float(1)
         continue
-
-    if input == "ab":
-        B_Point = float(B_Point) + float(1)
-        A_Point = float(A_Point) + float(1)
-        continue
-
-
-    if input == "A-":
+    # removing
+    if input == "a-" or input == "A-":
         A_Point = float(A_Point) - float(1)
         continue
-
-    if input == "B-":
+    if input == "b-" or input == "B-":
         B_Point = float(B_Point) - float(1)
         continue
-
-    if input == "a-":
+    if input == "ab-" or input == "AB-":
         A_Point = float(A_Point) - float(1)
-        continue
-
-    if input == "b-":
         B_Point = float(B_Point) - float(1)
         continue
-
-    if input == "ab-":
-        B_Point = float(B_Point) - float(1)
-        A_Point = float(A_Point) - float(1)
-        continue
-
-
-    if input == "AB":
-        B_Point = float(B_Point) + float(1)
-        A_Point = float(A_Point) + float(1)
-        continue
-
+    # random
     if input == "random":
         A_Point = float(random.randint(int(1), int(100)))
         B_Point = float(random.randint(int(1), int(100)))
         continue
-
-    if input == "randoma":
+    if input == "randoma" or input == "randomA":
         A_Point = float(random.randint(int(1), int(100)))
         continue
-
-    if input == "randomA":
-        A_Point = float(random.randint(int(1), int(100)))
-        continue
-
-    if input == "randomb":
+    if input == "randomb" or input == "randomB":
         B_Point = float(random.randint(int(1), int(100)))
         continue
-
-    if input == "randomB":
-        B_Point = float(random.randint(int(1), int(100)))
-        continue
-
+    # reset
     if input == "reset":
         B_Point = float(0)
         A_Point = float(0)
         continue
-
-    if input == "reseta":
+    if input == "reseta" or input == "resetA":
         A_Point = float(0)
         continue
-
-    if input == "resetb":
+    if input == "resetb" or input == "resetB":
         B_Point = float(0)
         continue
-
+    # return
     if input == "":
         continue
-
+    # exit
     if input == "exit":
-        print ("Exting...")
+        print("Exting...")
         exit(0)
-
+    # incorrect
     else:
         print("Incorrect command, type help for information on using the software or visit https://github.com/Vincenzo160/Simple-point-counter/wiki to visit the official wiki")
-
+    

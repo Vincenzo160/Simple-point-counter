@@ -3,7 +3,7 @@ version = "1.1.3"
 add = 1
 A_Point = '0'
 B_Point = '0'
-print("Versione:", version)
+print("Version:", version)
 while True:
     input = '0'
     del(input)
@@ -12,67 +12,67 @@ while True:
 
     if input == 'help':
         print("")
-        print("Aggiungi --[argomento]")
+        print("Add --[argument]")
         print("")
-        print("Scegli la sezione che ti interessa")
-        print("--add_point = Guida al aggiungere punti")
-        print("--remove_point = Guida al rimuovere punti")
-        print("--exit Guida al uscita dal programma")
-        print("--random Guida al rendere casuale il punteggio")
+        print("Choose the section that interests you")
+        print("--add_point = Guide to adding points")
+        print("--remove_point = Guide to remove points")
+        print("--exit Guide to exiting")
+        print("--random Guide to randomize the score")
         print("")
         continue
 
     if input == 'help --add_point':
         print("")
-        print("Aggiungere punti")
+        print("Add points")
         print("")
-        print("Per aggiugere un punto ad una squadra digita la lettera assegnata alla squadra")
+        print("To add a point to a team, type the letter assigned to the team")
         print("")
-        print("ESEMPIO")
+        print("EXAMPLE")
         print("a")
         print("")
         continue
 
     if input == 'help --remove_point':
         print("")
-        print("Rimuovere punti")
+        print("Remove points")
         print("")
-        print("Per rimuovere un punto ad una squadra digita la lettera assegnata alla squadra seguita da un -")
+        print("To remove a point from a team, type the letter assigned to the team followed by a -")
         print("")
-        print("ESEMPIO")
+        print("EXAMPLE")
         print("b-")
         print("")
         continue
 
-    if input == 'help --exit':
+    if input == 'help --exit':    #NO
         print("")
-        print("Uscire")
+        print("Exiting")
         print("")
-        print("Per uscire digita exit")
+        print("To exit, type exit")
         print("")
-        print("ESEMPIO")
+        print("EXAMPLE")
         print("exit")
         print("")
         continue
 
     if input == 'help --random':
         print("")
-        print("Rendi casuale")
+        print("Randomize")
         print("")
-        print("Per rendere casuale il punteggio digita random seguito dalla lettera assegnata alla squadra, o digita semplicemente random per randomizzare entrambe le squadre")
+        print("To randomize the score type random followed by the letter assigned to the team, or just type random to randomize both the team")
         print("")
-        print("ESEMPIO")
+        print("EXAMPLE")
         print("random")
         print("")
         continue
 
     if input == 'help --reset':
         print("")
-        print("Resetta il punteggio")
+        print("Reset the score")
         print("")
-        print("Per resettare il punteggio digita reset seguito dalla lettera assegnata alla squadra, o digita semplicemente reset per randomizzare resettare le squadre")
+        print("To reset the score, type reset followed by the letter assigned to the team, or simply type reset to randomize reset teams")
         print("")
-        print("ESEMPIO")
+        print("EXAMPLE")
         print("resetb")
         print("")
         continue
@@ -164,9 +164,9 @@ while True:
         continue
 
     if input == "exit":
-        print ("Uscita...")
+        print ("Exting...")
         exit(0)
 
     else:
-        print("Comando errato, digita help per informazioni sul utilizzo del software o visita https://github.com/Vincenzo160/Simple-point-counter/wiki per visitare la wiki ufficiale")
+        print("Incorrect command, type help for information on using the software or visit https://github.com/Vincenzo160/Simple-point-counter/wiki to visit the official wiki")
 
